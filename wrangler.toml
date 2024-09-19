@@ -1,8 +1,15 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "proud-morning-3999"
+name = "wrangler-r2-operation"
 main = "src/index.ts"
 compatibility_date = "2024-09-09"
 compatibility_flags = ["nodejs_compat"]
+
+
+[[r2_buckets]]
+binding = 'MY_BUCKET'
+bucket_name = 'images'
+preview_bucket_name = 'images' #開発用
+
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
